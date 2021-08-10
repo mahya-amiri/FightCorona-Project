@@ -1,0 +1,161 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  /* Set margin to 0 and overflow to hidden, to go fullScreen */
+  margin: 0;
+  overflow: hidden;
+}
+#container {
+  position: relative;
+  width: 100%;
+}
+
+#container img {
+  width: 100%;
+  height: auto;
+}
+
+#container #startButton {
+  position: absolute;
+  top: 55%;
+  left: 48%;
+  background-color: #990000;
+  color: #ffffff;
+  font-size: 40px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#container #startButton:hover {
+  background-color: #993333;
+}
+
+#container #p {
+  position: absolute;
+  top: 63%;
+  left: 37%;
+  color: #ffffff;
+  font-size: 25px;
+  font-family: "Trebuchet MS";
+}
+
+#container #restartButton {
+  position: absolute;
+  top: 65%;
+  left: 45%;
+  background-color: #993333;
+  color: #ffffff;
+  font-size: 40px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#container #restartButton:hover {
+  background-color: #990000;
+}
+
+.score {
+  width: 100%;
+  margin: 2em 0 0;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.score__content {
+  position: relative;
+  display: inline-block;
+  padding: 5px 10px;
+  vertical-align: top;
+}
+
+.score__label {
+  font-family: "Trebuchet MS";
+  font-weight: bold;
+  font-size: 30px;
+  position: relative;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.score__value {
+  color: #958888;
+}
+
+.score__value--energy {
+  position: relative;
+  width: 60px;
+  height: 8px;
+  margin-top: 20px;
+  border-radius: 3px;
+  padding: 5px 100px;
+  background-color: #958888;
+}
+
+.energy-bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 2px;
+  padding: 5px;
+  background-color: #267340;
+  -webkit-animation-name: none;
+  animation-name: none;
+  -webkit-animation-duration: 150ms;
+  animation-duration: 150ms;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.score__value--count {
+  font-size: 26px;
+}
+
+.count-circle {
+  position: absolute;
+  left: 50%;
+  width: 46px;
+  margin: -37px 0 0 -23px;
+}
+
+@-webkit-keyframes blinking {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  .header {
+    font-size: 0.75em;
+    top: 6.5em;
+  }
+  .header h2 {
+    letter-spacing: 0.65em;
+  }
+}

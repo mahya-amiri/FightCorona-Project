@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fight CoronaVirus | Free Game by Mahya Amiri</title>
+    <link rel="icon" href="asset/picture/icon.png" />
+
+    <!-- Add the libraries -->
+    <script src="lib/three.js"></script>
+    <script src="lib/LegacyJSONLoader.js"></script>
+    <script src="lib/OBJLoader.js"></script>
+    <script src="lib/THREEx.KeyboardState.js"></script>
+    <script src="lib/ShadowMapViewer.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- The First Page -->
+    <div class="score" id="score">
+      <div class="score__content" id="energy">
+        <div class="score__label">Energy</div>
+        <div class="score__value score__value--energy" id="energyValue">
+          <div class="energy-bar" id="energyBar"></div>
+        </div>
+      </div>
+      <div class="score__content" id="count">
+        <div class="score__label">Score</div>
+        <div class="score__value score__value--count" id="countValue">0</div>
+        <svg class="count-circle" id="countCircle" viewbox="0 0 200 200">
+          <circle
+            id="countCircleBgr"
+            r="80"
+            cx="100"
+            cy="100"
+            fill="none"
+            stroke="#958888"
+            stroke-width="24px"
+          />
+          <circle
+            id="countCircleStroke"
+            r="80"
+            cx="100"
+            cy="100"
+            fill="none"
+            stroke="#267340"
+            stroke-width="14px"
+            stroke-dasharray="502"
+          />
+        </svg>
+      </div>
+    </div>
+    <div id="container">
+      <img src="asset/picture/background.png" />
+      <button id="startButton">Start</button>
+      <p id="p">(◀ ▶ = Move ambulance, Space = Shoot alcohol)</p>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

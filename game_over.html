@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Over</title>
+    <link rel="icon" href="asset/picture/icon.png" />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <img src="asset/picture/game_over.png" />
+      <button id="restartButton" onclick="document.location='index.html'">
+        Restart
+      </button>
+    </div>
+    <script>
+      var gameOver = new Audio("./asset/sound/game_over.wav");
+      gameOver.currentTime = 0;
+      gameOver.play();
+    </script>
+  </body>
+</html>
